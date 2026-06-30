@@ -1,5 +1,9 @@
 # The HLD Handbook
 
+[![CI](https://github.com/CodeForContribute/hld-handbook/actions/workflows/ci.yml/badge.svg)](https://github.com/CodeForContribute/hld-handbook/actions/workflows/ci.yml)
+[![Next.js](https://img.shields.io/badge/Next.js-15-000?logo=next.js)](https://nextjs.org)
+[![Deploy on Render](https://img.shields.io/badge/Render-static%20site-46E3B7?logo=render&logoColor=white)](https://render.com)
+
 A comprehensive, **original** High-Level Design (system design) handbook built with Next.js (App Router). Markdown-driven content covering the building-block concepts and end-to-end case studies that the popular system-design resources teach — written from first principles, so it's yours to own and extend.
 
 ## Contents
