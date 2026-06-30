@@ -1,0 +1,22 @@
+# Render Blueprint — https://render.com/docs/blueprint-spec
+# Static site built from the Next.js static export (./out).
+# Auto-deploys on every push to the connected GitHub branch.
+services:
+  - type: web
+    name: hld-handbook
+    runtime: static
+    buildCommand: npm ci && npm run build
+    staticPublishPath: ./out
+    pullRequestPreviewsEnabled: true
+    # Serve clean 404s from the exported not-found page.
+    routes:
+      - type: rewrite
+        source: /404
+        destination: /404.html
+    headers:
+      - path: /*
+        name: X-Content-Type-Options
+        value: nosniff
+      - path: /*
+        name: X-Frame-Options
+        value: SAMEORIGIN

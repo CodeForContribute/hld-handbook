@@ -8,7 +8,7 @@ import ReadingProgress from "@/components/ReadingProgress";
 import { getNav, getSearchIndex } from "@/lib/content";
 
 export const metadata = {
-  metadataBase: new URL("https://hld-handbook.local"),
+  metadataBase: new URL("https://hld-handbook.onrender.com"),
   title: {
     default: "The HLD Handbook — High-Level / System Design",
     template: "%s · The HLD Handbook",
